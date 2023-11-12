@@ -14,10 +14,10 @@ To start the project, follow the steps below.
 
 1. Clone this repository to your local machine.
    ```sh
-   git clone https://github.com/USERNAME/valorant-wikipedia.git
+   git clone https://github.com/ulvispaethe/ValorantWikipedia.git
 2. Navigate to the project directory.
    ```sh
-   cd valorant-wikipedia
+   cd ValorantWikipedia
 3. Install the necessary packages.
    ```sh
    npm install
