@@ -1,8 +1,32 @@
-# React + Vite
+# ValorantApi Wikipedia Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project utilizes ValorantApi to gather and present information about the Valorant game.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To start the project, follow the steps below.
+
+### Requirements
+
+- Make sure Node.js is installed.
+
+### Installation
+
+1. Clone this repository to your local machine.
+   ```sh
+   git clone https://github.com/USERNAME/valorant-wikipedia.git
+2. Navigate to the project directory.
+   ```sh
+   cd valorant-wikipedia
+3. Install the necessary packages.
+   ```sh
+   npm install
+### Usage
+
+To start the project, run the following command:
+   ```sh
+   npm run dev
+
+
+   
+
