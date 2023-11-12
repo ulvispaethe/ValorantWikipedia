@@ -5,6 +5,7 @@ import Detail from './pages/Detail'
 import Header from './layouts/Header'
 import Agents from './pages/Agents'
 import Maps from './pages/Maps'
+import Weapons from './pages/Weapons'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/maps' element={<Maps/>}/>
+        <Route path='/weapons' element={<Weapons/>}/>
         <Route path='/agents' element={<Agents/>}/>
         <Route path='/agents/:uuid' element={<Detail/>}/>
       </Routes>
