@@ -11,7 +11,7 @@ const initialState = {
 
 export const getAgents = createAsyncThunk('getagents', async () => {
     try {
-      const response = await axios.get('https://valorant-api.com/v1/agents?isPlayableCharacter=true');
+      const response = await axios.get('https://valorant-api.com/v1/agents');
       return response.data.data;
     } catch (error) {
       throw error;
@@ -38,7 +38,7 @@ const agentSlice = createSlice({
       })
       .addCase(getAgents.fulfilled, (state, action) => {
         state.agentsStatus = STATUS.SUCCESS;
-        state.agents = action.payload; // Ensure action.payload is an array of agents
+        state.agents = action.payload; 
       })
       .addCase(getAgents.rejected, (state, action) => {
         state.agentsStatus = STATUS.FAIL;
@@ -48,7 +48,7 @@ const agentSlice = createSlice({
       })
       .addCase(getAgentDetail.fulfilled, (state, action) => {
         state.agentDetailStatus = STATUS.SUCCESS;
-        state.agentDetail = action.payload; // Ensure action.payload is the expected agent detail object
+        state.agentDetail = action.payload; 
       })
       .addCase(getAgentDetail.rejected, (state, action) => {
         state.agentDetailStatus = STATUS.FAIL;

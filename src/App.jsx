@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Detail from './pages/Detail'
 import Header from './layouts/Header'
 import Agents from './pages/Agents'
+import Maps from './pages/Maps'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/maps' element={<Maps/>}/>
         <Route path='/agents' element={<Agents/>}/>
         <Route path='/agents/:uuid' element={<Detail/>}/>
       </Routes>

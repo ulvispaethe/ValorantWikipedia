@@ -9,7 +9,7 @@ const Header = () => {
         <div className='flex items-center'>
             <ul className='flex gap-4 items-center text-black font-extrabold text-xl'>
                 <li className='cursor-pointer' onClick={()=> navigate("/agents")}>Agents</li>
-                <li className='cursor-pointer'>Maps</li>
+                <li className='cursor-pointer' onClick={()=> navigate("/maps")} >Maps</li>
                 <li className='cursor-pointer'>Weapons</li>
             </ul>
         </div>
